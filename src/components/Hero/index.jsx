@@ -1,4 +1,5 @@
 import React from "react";
+import arizona from "../../images/arizona1_11.jpg";
 
 function Hero() {
   return (
@@ -9,10 +10,10 @@ function Hero() {
           <br className="mobile-break" />
           an Arizona based
           <br />
-          software developer.
+          fullstack software developer.
         </p>
 
-        <img src="../assets/images/arizona1_11.jpg" alt="amazing arizona" />
+        <img src={arizona} alt="amazing arizona" />
       </section>
     </div>
   );

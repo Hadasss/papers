@@ -1,40 +1,56 @@
 import React from "react";
+import Carousel from "react-bootstrap/Carousel";
+import memory from "../../images/project1.JPG";
+import dice from "../../images/project2.JPG";
+import gallery from "../../images/project3.JPG";
+import marvel from "../../images/project5.JPG";
+import planner from "../../images/project6.JPG";
+import weather from "../../images/project7.JPG";
+import quiz from "../../images/project8.JPG";
+import favdash from "../../images/project9.jpg";
+import blob from "../../images/project10.jpg";
+import notes from "../../images/project11.jpg";
 
-function Projects() {
+function Project() {
   const projectArr = [
     {
       name: "Memory Game",
       description: "Memory card game.",
       technologies: "Javascript, CSS, HTML",
-      imgLink: "./assets/images/project1_1.JPG",
+      imgLink: memory,
+      githubLink: "https://github.com/Hadasss/Avengers-Memory-Game",
       link: "https://hadasss.github.io/Avengers-Memory-Game/",
     },
     {
       name: "Beat The Dice",
       description: "A two player dice game.",
       technologies: "CSS, Javascript, HTML",
-      imgLink: "./assets/images/project2.JPG",
+      imgLink: dice,
+      githubLink: "https://github.com/Hadasss/Beat-The-Dice",
       link: "https://hadasss.github.io/Beat-The-Dice/",
     },
     {
       name: "Musical Gallery",
       description: "Gallery of pictures, each pic plays a song.",
       technologies: "HTML, CSS, Javascript, jQuery",
-      imgLink: "./assets/images/project3.JPG",
+      imgLink: gallery,
+      githubLink: "https://github.com/Hadasss/jquery-musical-gallery",
       link: "https://hadasss.github.io/jquery-musical-gallery/",
     },
     {
       name: "Workday Planner",
       description: "Manage your workday with persistent data.",
       technologies: "Javascript, CSS, HTML, Bootstrap",
-      imgLink: "./assets/images/project6_1.JPG",
+      imgLink: planner,
+      githubLink: "https://github.com/Hadasss/planogramma",
       link: "https://hadasss.github.io/planogramma/",
     },
     {
       name: "Coding Quiz",
       description: "Coding quiz game against the clock.",
       technologies: "Javascript, HTML, CSS",
-      imgLink: "./assets/images/project8_1.JPG",
+      imgLink: quiz,
+      githubLink: "https://github.com/Hadasss/coding-quiz",
       link: "https://hadasss.github.io/coding-quiz/",
     },
     {
@@ -42,7 +58,8 @@ function Projects() {
       description:
         "Weather Dashboard, pulls data from API, 5 day future forecast, search history.",
       technologies: "Javascript, CSS, Bulma, HTML",
-      imgLink: "./assets/images/project 7_1.JPG",
+      imgLink: weather,
+      githubLink: "https://github.com/Hadasss/happy-trails",
       link: "https://hadasss.github.io/happy-trails/",
     },
     {
@@ -50,49 +67,94 @@ function Projects() {
       description:
         "Find your favorite Marvel superhero in featured appearances.",
       technologies: "Javascript, Tailwind, CSS, Bulma, Server side APIs",
-      imgLink: "./assets/images/project5.JPG",
+      imgLink: marvel,
+      githubLink: "https://github.com/Hadasss/marvel-mayhem",
       link: "https://hadasss.github.io/marvel-mayhem/",
+    },
+    {
+      name: "Notepad--",
+      description: "A note taking app.",
+      technologies: "Node.js, Express",
+      imgLink: notes,
+      githubLink: "https://github.com/Hadasss/notepad",
+      link: "https://notepad1234.herokuapp.com/",
+    },
+    {
+      name: "Tech Blob",
+      description: "A blog for sharing thoughts and insights with other users.",
+      technologies:
+        "Express, Express-session, Sequelize, connect-session-sequelize, Handlebars, bCrypt, JS, Bulma",
+      imgLink: blob,
+      githubLink: "https://github.com/Hadasss/tech-blob",
+      link: "https://tech-blob.herokuapp.com/",
     },
     {
       name: "Fav-Dash",
       description:
-        " A friendly, easy and elegant web based favorites dashboard.",
+        "A friendly, easy and elegant web based favorites dashboard.",
       technologies:
         "Node.js, Express, Express-session, Sequelize, Handlebars, bCrypt, JS, Bulma",
-      imgLink: "./assets/images/project9.jpg",
+      imgLink: favdash,
+      githubLink: "https://github.com/Hadasss/favdash",
       link: "https://fav-dash.herokuapp.com/",
     },
   ];
 
   return (
-    <div>
-      <section className="projects" id="projects">
-        <h1 className="borderized">Some of My Projects</h1>
-        <div className="row row-cols-1 row-cols-md-3 g-4">
-          {projectArr.map((project) => (
-            <div className="col">
-              <div className="card">
-                <img src={project.imgLink} className="card-img-top" alt="" />
-                <div className="card-body">
-                  <h5 className="card-title">{project.name}</h5>
-                  <p className="card-text">
-                    <br />
-                    {project.description}
-                    <br />
-                    {project.technologies}
-                    <br />
-                    <a href={project.link} target="_blank">
-                      Live Deployment
-                    </a>
-                  </p>
-                </div>
+    <section className="projects" id="projects">
+      <h1 className="borderized">Some of My Projects</h1>
+
+      {/* <div className="row row-cols-1 row-cols-md-3 g-4">
+        {projectArr.map((project) => (
+          <div className="col" key={project.name}>
+            <div className="card">
+              <img src={project.imgLink} className="card-img-top" alt="" />
+              <div className="card-body">
+                <h5 className="card-title">{project.name}</h5>
+                <p className="card-text">
+                  <br />
+                  {project.description}
+                  <br />
+                  {project.technologies}
+                  <br />
+                  <a href={project.link} target="_blank">
+                    Live Deployment
+                  </a>
+                </p>
               </div>
             </div>
+          </div>
+        ))}
+      </div> */}
+      <div>
+        <Carousel>
+          {projectArr.map((project) => (
+            <Carousel.Item key={project.name}>
+              <img
+                className="d-block w-100"
+                src={project.imgLink}
+                alt="Project"
+              />
+              <Carousel.Caption className="carousel-background">
+                <h3>{project.name}</h3>
+                <p>{project.description}</p>
+                <p>
+                  {project.technologies}
+                  <br></br>
+                  <a href={project.githubLink} target="_blank">
+                    GitHub repo
+                  </a>
+                </p>
+                <a href={project.link} target="_blank">
+                  Live Deployment
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
           ))}
-        </div>
-      </section>
-    </div>
+        </Carousel>
+      </div>
+    </section>
   );
 }
 
-export default Projects;
+export default Project;
