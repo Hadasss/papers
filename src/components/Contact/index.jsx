@@ -26,7 +26,7 @@ function Contact() {
     <section className="contact-form">
       <h1 className="borderized">Contact me</h1>
 
-      <Form className="col-6 p-3" onSubmit={handleSubmit}>
+      <Form className="col-lg-6 col-sm-10 p-3" onSubmit={handleSubmit}>
         <Form.Label>Your Name</Form.Label>
         <Row className="mb-3">
           <Col>

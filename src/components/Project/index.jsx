@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import Accordion from "react-bootstrap/Accordion";
 import memory from "../../images/project1.JPG";
 import dice from "../../images/project2.JPG";
 import gallery from "../../images/project3.JPG";
@@ -104,7 +105,7 @@ function Project() {
     <section className="projects" id="projects">
       <h1 className="borderized">Some of My Projects</h1>
 
-      <Carousel className="px-5">
+      {/* <Carousel className="px-5">
         {projectArr.map((project) => (
           <Carousel.Item key={project.name}>
             <img
@@ -132,7 +133,37 @@ function Project() {
             </Carousel.Caption>
           </Carousel.Item>
         ))}
-      </Carousel>
+      </Carousel> */}
+
+      <Accordion defaultActiveKey={["0"]}>
+        {projectArr.map((project, index) => (
+          <Accordion.Item eventKey={index} key={project.name}>
+            <Accordion.Header>{project.name}</Accordion.Header>
+            <Accordion.Body>
+              <img
+                className="d-block w-100"
+                src={project.imgLink}
+                alt="Project"
+              />
+              <p>{project.description}</p>
+              <p>
+                {project.technologies}
+                <br></br>
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub repo
+                </a>
+              </p>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                Live Deployment
+              </a>
+            </Accordion.Body>
+          </Accordion.Item>
+        ))}
+      </Accordion>
     </section>
   );
 }

@@ -1,21 +1,23 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
 
 function Nav(props) {
-  const { categories = [], currentCategory } = props;
+  const { categories = [] } = props;
 
   return (
     <nav>
       <ul className="menu">
+        {/* state: */}
         {categories.map((category) => (
           <li
-            className={`borderized ${
-              currentCategory.name === category.name && "navActive"
-            }`}
+            className={
+              props.currentPage === category.name
+                ? "borderized navActive"
+                : "borderized"
+            }
             key={category.name}
           >
             <a
+              // setState:
               onClick={() => props.handleChange(category.name)}
               href={category.href}
             >

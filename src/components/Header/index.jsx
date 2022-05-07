@@ -10,17 +10,19 @@ function Header(props) {
     { name: "Contact", href: "#contact" },
   ]);
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
   return (
     <div className="header">
       <a href="#home">
-        <img className="cactus" src={cactus} alt="cactus icon" />
+        <img
+          className="cactus"
+          src={cactus}
+          alt="cactus icon"
+          onClick={() => props.handleChange("Home")}
+        />
       </a>
       <Nav
         categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
+        currentPage={props.currentPage}
         handleChange={props.handleChange}
       ></Nav>
     </div>

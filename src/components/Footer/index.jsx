@@ -1,9 +1,9 @@
 import React from "react";
-import phone from "../../images/icons8-phone-64.png";
-import linkedin from "../../images/icons8-linkedin-60.png";
-import email from "../../images/icons8-email-64.png";
+import phone from "../../images/icons8-phone-48.png";
+import linkedin from "../../images/icons8-linkedin-45.png";
+import email from "../../images/icons8-email-60.png";
 import github from "../../images/icons8-github-48.png";
-import stack from "../../images/icons8-stack-overflow-50.png";
+import stack from "../../images/icons8-stack-overflow-45.png";
 
 function Footer() {
   return (

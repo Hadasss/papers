@@ -5,6 +5,7 @@ import Project from "./components/Project";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Home from "./components/Home";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("About");
@@ -16,8 +17,10 @@ function App() {
       return <Project />;
     } else if (currentPage === "Resume") {
       return <Resume />;
-    } else {
+    } else if (currentPage === "Contact") {
       return <Contact />;
+    } else {
+      return <Home />;
     }
   };
 
@@ -28,6 +31,7 @@ function App() {
   return (
     <div className="col-12">
       <Header currentPage={currentPage} handleChange={handleChange} />
+
       {renderPage()}
       <Footer />
     </div>
