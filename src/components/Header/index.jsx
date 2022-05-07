@@ -7,7 +7,7 @@ function Header(props) {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about-me" },
     { name: "Projects", href: "#projects" },
-    { name: "Work", href: "#work-experience" },
+    { name: "Resume", href: "#resume" },
     { name: "Contact", href: "#contact" },
   ]);
 
