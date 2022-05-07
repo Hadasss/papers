@@ -1,19 +1,26 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Home from "./components/Home";
 import About from "./components/About";
 import Project from "./components/Project";
 import Work from "./components/Work";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("About");
+  const [currentPage, setCurrentPage] = useState("Home");
 
   const renderPage = () => {
     if (currentPage === "About") {
       return <About />;
     } else if (currentPage === "Projects") {
       return <Project />;
+    } else if (currentPage === "Home") {
+      return <Home />;
+    } else if (currentPage === "Work") {
+      return <Work />;
+    } else {
+      return <Contact />;
     }
   };
 
@@ -25,10 +32,6 @@ function App() {
   return (
     <div>
       <Header currentPage={currentPage} handleChange={handleChange} />
-      <Hero />
-      {/* <About />
-      <Project />
-      <Work /> */}
       {renderPage()}
       <Footer />
     </div>
