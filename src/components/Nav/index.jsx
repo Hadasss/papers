@@ -7,9 +7,6 @@ function Nav(props) {
 
   return (
     <nav className="navigation">
-      <input type="checkbox" className="toggle-menu" />
-
-      <div className="hamburger"></div>
       <ul className="menu">
         {categories.map((category) => (
           <li

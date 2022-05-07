@@ -11,8 +11,6 @@ function Header(props) {
     { name: "contact", href: "#contact" },
   ]);
 
-  // const [currentPage, setCurrentPage] = useState("Home")
-
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
