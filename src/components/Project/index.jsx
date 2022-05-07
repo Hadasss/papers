@@ -104,55 +104,35 @@ function Project() {
     <section className="projects" id="projects">
       <h1 className="borderized">Some of My Projects</h1>
 
-      {/* <div className="row row-cols-1 row-cols-md-3 g-4">
+      <Carousel>
         {projectArr.map((project) => (
-          <div className="col" key={project.name}>
-            <div className="card">
-              <img src={project.imgLink} className="card-img-top" alt="" />
-              <div className="card-body">
-                <h5 className="card-title">{project.name}</h5>
-                <p className="card-text">
-                  <br />
-                  {project.description}
-                  <br />
-                  {project.technologies}
-                  <br />
-                  <a href={project.link} target="_blank">
-                    Live Deployment
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div> */}
-      <div>
-        <Carousel>
-          {projectArr.map((project) => (
-            <Carousel.Item key={project.name}>
-              <img
-                className="d-block w-100"
-                src={project.imgLink}
-                alt="Project"
-              />
-              <Carousel.Caption className="carousel-background">
-                <h3>{project.name}</h3>
-                <p>{project.description}</p>
-                <p>
-                  {project.technologies}
-                  <br></br>
-                  <a href={project.githubLink} target="_blank">
-                    GitHub repo
-                  </a>
-                </p>
-                <a href={project.link} target="_blank">
-                  Live Deployment
+          <Carousel.Item key={project.name}>
+            <img
+              className="d-block w-100"
+              src={project.imgLink}
+              alt="Project"
+            />
+            <Carousel.Caption className="carousel-background">
+              <h3>{project.name}</h3>
+              <p>{project.description}</p>
+              <p>
+                {project.technologies}
+                <br></br>
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub repo
                 </a>
-              </Carousel.Caption>
-            </Carousel.Item>
-          ))}
-        </Carousel>
-      </div>
+              </p>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                Live Deployment
+              </a>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
+      </Carousel>
     </section>
   );
 }
