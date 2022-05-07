@@ -16,6 +16,10 @@ function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    firstName.value = "";
+    lastName.value = "";
+    email.value = "";
+    message.value = "";
   }
 
   return (
@@ -26,21 +30,26 @@ function Contact() {
         <Form.Label>Your Name</Form.Label>
         <Row className="mb-3">
           <Col>
-            <Form.Control placeholder="First name" />
+            <Form.Control placeholder="First name" required />
           </Col>
           <Col>
-            <Form.Control placeholder="Last name" />
+            <Form.Control placeholder="Last name" required />
           </Col>
         </Row>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Control type="email" placeholder="Enter email" required />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Message</Form.Label>
-          <Form.Control as="textarea" rows={4} placeholder="Your Message" />
+          <Form.Control
+            as="textarea"
+            rows={4}
+            placeholder="Your Message"
+            required
+          />
         </Form.Group>
 
         <Button variant="danger" type="submit">

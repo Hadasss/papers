@@ -4,7 +4,6 @@ import cactus from "../../images/icons8-cactus-48.png";
 
 function Header(props) {
   const [categories] = useState([
-    { name: "Home", href: "#home" },
     { name: "About", href: "#about-me" },
     { name: "Projects", href: "#projects" },
     { name: "Resume", href: "#resume" },

@@ -3,6 +3,7 @@ import phone from "../../images/icons8-phone-64.png";
 import linkedin from "../../images/icons8-linkedin-60.png";
 import email from "../../images/icons8-email-64.png";
 import github from "../../images/icons8-github-48.png";
+import stack from "../../images/icons8-stack-overflow-50.png";
 
 function Footer() {
   return (
@@ -34,6 +35,14 @@ function Footer() {
           rel="noopener noreferrer"
         >
           <img src={github} alt="github" />
+        </a>
+
+        <a
+          href="https://stackoverflow.com/users/16410567/hades"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={stack} alt="stack-overflow" />
         </a>
       </div>
     </section>

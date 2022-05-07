@@ -5,7 +5,7 @@ function About() {
   return (
     <section className="personal" id="about-me">
       <h2 className="borderized">About Me</h2>
-      <article className="about-me">
+      <article className="about-me d-flex flex-row flex-wrap">
         <img src={hadas} alt="Hadas Kamin" />
         <p>
           I am an aspiring fullstack developer, <br />

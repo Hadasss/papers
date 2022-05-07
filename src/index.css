@@ -40,16 +40,6 @@ h2,
   align-items: center;
 }
 
-/* .cactus {
-  display: block;
-  min-width: 100%;
-} */
-
-/* header ul {
-  display: flex;
-  justify-content: flex-end;
-} */
-
 .header li {
   /* flex-wrap: wrap; */
   padding: 5px;
@@ -62,11 +52,6 @@ h2,
   text-decoration: none;
   color: #14aa67;
 }
-
-/* .navigation {
-  display: flex;
-  align-items: center;
-} */
 
 .menu li a:hover {
   text-shadow: 0 0 15px rgb(232, 108, 56);
@@ -118,8 +103,8 @@ h2,
 .projects {
   padding: var(--section-padding);
   background-color: #9fedd7;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
 }
 
 .personal h2,
@@ -130,11 +115,6 @@ h2,
   display: inline-block;
   padding: 5px 10px;
   margin: 0 20px 25px 20px;
-}
-
-.about-me {
-  display: flex;
-  height: 50vh;
 }
 
 .about-me img {
@@ -163,20 +143,12 @@ h2,
 }
 
 .other-stuff {
-  display: flex;
-}
-
-.work-experience,
-.education,
-.volunteer-work {
-  padding: 15px;
+  /* display: flex; */
 }
 
 .contact {
   background-color: #e7d8c9;
-  /* padding: var(--section-padding); */
   text-align: center;
-  /* height: 40vh; */
 }
 
 .contact-form {
@@ -187,9 +159,7 @@ h2,
 }
 
 .social {
-  /* display: flex; */
   justify-content: center;
-  align-items: flex-end;
 }
 
 .social img {

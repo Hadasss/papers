@@ -104,7 +104,7 @@ function Project() {
     <section className="projects" id="projects">
       <h1 className="borderized">Some of My Projects</h1>
 
-      <Carousel>
+      <Carousel className="px-5">
         {projectArr.map((project) => (
           <Carousel.Item key={project.name}>
             <img

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import Home from "./components/Home";
 import About from "./components/About";
 import Project from "./components/Project";
 import Resume from "./components/Resume";
@@ -15,8 +14,6 @@ function App() {
       return <About />;
     } else if (currentPage === "Projects") {
       return <Project />;
-    } else if (currentPage === "Home") {
-      return <Home />;
     } else if (currentPage === "Resume") {
       return <Resume />;
     } else {
@@ -29,7 +26,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="col-12">
       <Header currentPage={currentPage} handleChange={handleChange} />
       {renderPage()}
       <Footer />
