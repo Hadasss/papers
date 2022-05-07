@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Nav from "../Nav";
 import cactus from "../../images/icons8-cactus-48.png";
-import Home from "../Home";
 
 function Header(props) {
   const [categories] = useState([

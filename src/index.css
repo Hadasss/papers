@@ -72,6 +72,10 @@ h2,
   text-shadow: 0 0 15px rgb(232, 108, 56);
 }
 
+.navActive {
+  text-shadow: 0 0 15px rgb(232, 108, 56);
+}
+
 .hero {
   background-color: #fef9c7;
   display: flex;

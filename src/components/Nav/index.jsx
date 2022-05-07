@@ -28,11 +28,11 @@ function Nav(props) {
     //   </Container>
     // </Navbar>
 
-    <nav className="navigation">
+    <nav>
       <ul className="menu">
         {categories.map((category) => (
           <li
-            className={`borderized col-xs={6} ${
+            className={`borderized ${
               currentCategory.name === category.name && "navActive"
             }`}
             key={category.name}

@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("Home");
+  const [currentPage, setCurrentPage] = useState("About");
 
   const renderPage = () => {
     if (currentPage === "About") {
@@ -25,7 +25,6 @@ function App() {
   };
 
   const handleChange = (page) => {
-    console.log(page);
     setCurrentPage(page);
   };
 
