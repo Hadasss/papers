@@ -1,5 +1,4 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
 import Accordion from "react-bootstrap/Accordion";
 import memory from "../../images/project1.JPG";
 import dice from "../../images/project2.JPG";
@@ -105,40 +104,12 @@ function Project() {
     <section className="projects" id="projects">
       <h1 className="borderized">Some of My Projects</h1>
 
-      {/* <Carousel className="px-5">
-        {projectArr.map((project) => (
-          <Carousel.Item key={project.name}>
-            <img
-              className="d-block w-100"
-              src={project.imgLink}
-              alt="Project"
-            />
-            <Carousel.Caption className="carousel-background">
-              <h3>{project.name}</h3>
-              <p>{project.description}</p>
-              <p>
-                {project.technologies}
-                <br></br>
-                <a
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub repo
-                </a>
-              </p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                Live Deployment
-              </a>
-            </Carousel.Caption>
-          </Carousel.Item>
-        ))}
-      </Carousel> */}
-
-      <Accordion defaultActiveKey={["0"]}>
+      <Accordion defaultActiveKey={["0"]} className="m-5">
         {projectArr.map((project, index) => (
           <Accordion.Item eventKey={index} key={project.name}>
-            <Accordion.Header>{project.name}</Accordion.Header>
+            <Accordion.Header className="fw-bolder">
+              {project.name}
+            </Accordion.Header>
             <Accordion.Body>
               <img
                 className="d-block w-100"
@@ -150,6 +121,7 @@ function Project() {
                 {project.technologies}
                 <br></br>
                 <a
+                  className="text-primary text-decoration-none"
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -157,7 +129,12 @@ function Project() {
                   GitHub repo
                 </a>
               </p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <a
+                className="text-primary text-decoration-none"
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Live Deployment
               </a>
             </Accordion.Body>

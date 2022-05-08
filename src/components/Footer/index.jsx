@@ -7,7 +7,7 @@ import stack from "../../images/icons8-stack-overflow-45.png";
 
 function Footer() {
   return (
-    <section className="contact pt-3" id="contact">
+    <footer className="contact pt-3" id="contact">
       <div className="contact-info">
         <h2>Let's Connect!</h2>
       </div>
@@ -45,7 +45,7 @@ function Footer() {
           <img src={stack} alt="stack-overflow" />
         </a>
       </div>
-    </section>
+    </footer>
   );
 }
 

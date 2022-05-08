@@ -6,7 +6,6 @@ function Nav(props) {
   return (
     <nav>
       <ul className="menu">
-        {/* state: */}
         {categories.map((category) => (
           <li
             className={
@@ -17,7 +16,6 @@ function Nav(props) {
             key={category.name}
           >
             <a
-              // setState:
               onClick={() => props.handleChange(category.name)}
               href={category.href}
             >
