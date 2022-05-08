@@ -1,5 +1,4 @@
 import React from "react";
-import Home from "../Home";
 import hadas from "../../images/hadas.jpg";
 
 function About() {
