@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/papers/static/css/main.20369f4b.css",
-    "main.js": "/papers/static/js/main.87b8bf84.js",
+    "main.css": "/papers/static/css/main.428d23db.css",
+    "main.js": "/papers/static/js/main.562bb6cf.js",
     "static/js/787.984565ea.chunk.js": "/papers/static/js/787.984565ea.chunk.js",
     "static/media/hadas.jpg": "/papers/static/media/hadas.237fbbc65244df412bf0.jpg",
     "static/media/arizona1_11.jpg": "/papers/static/media/arizona1_11.1d6bfb48c2adb812b7c3.jpg",
@@ -17,12 +17,12 @@
     "static/media/project2.JPG": "/papers/static/media/project2.61dc22702ca8155e6e5b.JPG",
     "static/media/project11.jpg": "/papers/static/media/project11.dd8e1471bbf8c9cdc1c6.jpg",
     "index.html": "/papers/index.html",
-    "main.20369f4b.css.map": "/papers/static/css/main.20369f4b.css.map",
-    "main.87b8bf84.js.map": "/papers/static/js/main.87b8bf84.js.map",
+    "main.428d23db.css.map": "/papers/static/css/main.428d23db.css.map",
+    "main.562bb6cf.js.map": "/papers/static/js/main.562bb6cf.js.map",
     "787.984565ea.chunk.js.map": "/papers/static/js/787.984565ea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20369f4b.css",
-    "static/js/main.87b8bf84.js"
+    "static/css/main.428d23db.css",
+    "static/js/main.562bb6cf.js"
   ]
 }
