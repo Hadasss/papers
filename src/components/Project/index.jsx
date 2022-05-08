@@ -56,7 +56,7 @@ function Project() {
     {
       name: "Happy Trails",
       description:
-        "Weather Dashboard, pulls data from API, 5 day future forecast, search history.",
+        "Weather Dashboard, pulls data from API, 5 day forecast, search history.",
       technologies: "Javascript, CSS, Bulma, HTML",
       imgLink: weather,
       githubLink: "https://github.com/Hadasss/happy-trails",
@@ -104,7 +104,7 @@ function Project() {
     <section className="projects" id="projects">
       <h1 className="borderized">Some of My Projects</h1>
 
-      <Accordion defaultActiveKey={["0"]} className="m-5">
+      <Accordion defaultActiveKey={["0"]}>
         {projectArr.map((project, index) => (
           <Accordion.Item eventKey={index} key={project.name}>
             <Accordion.Header className="fw-bolder">
@@ -117,7 +117,7 @@ function Project() {
                 alt="Project"
               />
               <p>{project.description}</p>
-              <p>
+              <p className="fw-bolder">
                 {project.technologies}
                 <br></br>
                 <a
@@ -130,7 +130,7 @@ function Project() {
                 </a>
               </p>
               <a
-                className="text-primary text-decoration-none"
+                className="text-primary text-decoration-none fw-bolder"
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
