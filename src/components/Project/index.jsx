@@ -43,7 +43,7 @@ function Project() {
       link: "https://tech-blob.herokuapp.com/",
     },
     {
-      name: "Notepad--",
+      name: "Notes",
       description: "A note taking app.",
       technologies: "Node.js, Express",
       imgLink: notes,
