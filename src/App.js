@@ -4,11 +4,11 @@ import About from "./components/About";
 import Project from "./components/Project";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import Home from "./components/Home";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("About");
+  const [currentPage, setCurrentPage] = useState("Home");
 
   const renderPage = () => {
     if (currentPage === "About") {
@@ -17,8 +17,8 @@ function App() {
       return <Project />;
     } else if (currentPage === "Resume") {
       return <Resume />;
-    } else if (currentPage === "Contact") {
-      return <Contact />;
+      // } else if (currentPage === "Contact") {
+      //   return <Contact />;
     } else {
       return <Home />;
     }

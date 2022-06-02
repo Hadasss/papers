@@ -10,16 +10,71 @@ import quiz from "../../images/project8.JPG";
 import favdash from "../../images/project9.jpg";
 import blob from "../../images/project10.jpg";
 import notes from "../../images/project11.jpg";
+import letters from "../../images/letters.jpg";
 
 function Project() {
   const projectArr = [
     {
-      name: "Memory Game",
-      description: "Memory card game.",
-      technologies: "Javascript, CSS, HTML",
-      imgLink: memory,
-      githubLink: "https://github.com/Hadasss/Avengers-Memory-Game",
-      link: "https://hadasss.github.io/Avengers-Memory-Game/",
+      name: "Letters",
+      description: "A real-time multiplayer game app with live chat",
+      technologies:
+        "Node.js, Express, React, Express-session, MongoDB, GraphQL, socket.io, JWT, bCrypt, Bulma",
+      imgLink: letters,
+      githubLink: "https://github.com/Hadasss/letters",
+      link: "https://l3tters.herokuapp.com/",
+    },
+    {
+      name: "Fav-Dash",
+      description:
+        "A friendly, easy and elegant web based favorites dashboard.",
+      technologies:
+        "Node.js, Express, Express-session, Sequelize, Handlebars, bCrypt, JS, Bulma",
+      imgLink: favdash,
+      githubLink: "https://github.com/Hadasss/favdash",
+      link: "https://fav-dash.herokuapp.com/",
+    },
+    {
+      name: "Tech Blob",
+      description: "A blog for sharing thoughts and insights with other users.",
+      technologies:
+        "Express, Express-session, Sequelize, connect-session-sequelize, Handlebars, bCrypt, JS, Bulma",
+      imgLink: blob,
+      githubLink: "https://github.com/Hadasss/tech-blob",
+      link: "https://tech-blob.herokuapp.com/",
+    },
+    {
+      name: "Notepad--",
+      description: "A note taking app.",
+      technologies: "Node.js, Express",
+      imgLink: notes,
+      githubLink: "https://github.com/Hadasss/notepad",
+      link: "https://notepad1234.herokuapp.com/",
+    },
+    {
+      name: "Marvel Mayhem",
+      description:
+        "Find your favorite Marvel superhero in featured appearances.",
+      technologies: "Javascript, Tailwind, CSS, Bulma, Server side APIs",
+      imgLink: marvel,
+      githubLink: "https://github.com/Hadasss/marvel-mayhem",
+      link: "https://hadasss.github.io/marvel-mayhem/",
+    },
+    {
+      name: "Happy Trails",
+      description:
+        "Weather Dashboard, pulls data from API, 5 day forecast, search history.",
+      technologies: "Javascript, CSS, Bulma, HTML",
+      imgLink: weather,
+      githubLink: "https://github.com/Hadasss/happy-trails",
+      link: "https://hadasss.github.io/happy-trails/",
+    },
+    {
+      name: "Workday Planner",
+      description: "Manage your workday with persistent data.",
+      technologies: "Javascript, CSS, HTML, Bootstrap",
+      imgLink: planner,
+      githubLink: "https://github.com/Hadasss/planogramma",
+      link: "https://hadasss.github.io/planogramma/",
     },
     {
       name: "Beat The Dice",
@@ -38,14 +93,6 @@ function Project() {
       link: "https://hadasss.github.io/jquery-musical-gallery/",
     },
     {
-      name: "Workday Planner",
-      description: "Manage your workday with persistent data.",
-      technologies: "Javascript, CSS, HTML, Bootstrap",
-      imgLink: planner,
-      githubLink: "https://github.com/Hadasss/planogramma",
-      link: "https://hadasss.github.io/planogramma/",
-    },
-    {
       name: "Coding Quiz",
       description: "Coding quiz game against the clock.",
       technologies: "Javascript, HTML, CSS",
@@ -53,50 +100,14 @@ function Project() {
       githubLink: "https://github.com/Hadasss/coding-quiz",
       link: "https://hadasss.github.io/coding-quiz/",
     },
+
     {
-      name: "Happy Trails",
-      description:
-        "Weather Dashboard, pulls data from API, 5 day forecast, search history.",
-      technologies: "Javascript, CSS, Bulma, HTML",
-      imgLink: weather,
-      githubLink: "https://github.com/Hadasss/happy-trails",
-      link: "https://hadasss.github.io/happy-trails/",
-    },
-    {
-      name: "Marvel Mayhem",
-      description:
-        "Find your favorite Marvel superhero in featured appearances.",
-      technologies: "Javascript, Tailwind, CSS, Bulma, Server side APIs",
-      imgLink: marvel,
-      githubLink: "https://github.com/Hadasss/marvel-mayhem",
-      link: "https://hadasss.github.io/marvel-mayhem/",
-    },
-    {
-      name: "Notepad--",
-      description: "A note taking app.",
-      technologies: "Node.js, Express",
-      imgLink: notes,
-      githubLink: "https://github.com/Hadasss/notepad",
-      link: "https://notepad1234.herokuapp.com/",
-    },
-    {
-      name: "Tech Blob",
-      description: "A blog for sharing thoughts and insights with other users.",
-      technologies:
-        "Express, Express-session, Sequelize, connect-session-sequelize, Handlebars, bCrypt, JS, Bulma",
-      imgLink: blob,
-      githubLink: "https://github.com/Hadasss/tech-blob",
-      link: "https://tech-blob.herokuapp.com/",
-    },
-    {
-      name: "Fav-Dash",
-      description:
-        "A friendly, easy and elegant web based favorites dashboard.",
-      technologies:
-        "Node.js, Express, Express-session, Sequelize, Handlebars, bCrypt, JS, Bulma",
-      imgLink: favdash,
-      githubLink: "https://github.com/Hadasss/favdash",
-      link: "https://fav-dash.herokuapp.com/",
+      name: "Memory Game",
+      description: "Memory card game.",
+      technologies: "Javascript, CSS, HTML",
+      imgLink: memory,
+      githubLink: "https://github.com/Hadasss/Avengers-Memory-Game",
+      link: "https://hadasss.github.io/Avengers-Memory-Game/",
     },
   ];
 
@@ -111,11 +122,18 @@ function Project() {
               {project.name}
             </Accordion.Header>
             <Accordion.Body>
-              <img
-                className="d-block w-100"
-                src={project.imgLink}
-                alt="Project"
-              />
+              <a
+                className="text-primary text-decoration-none fw-bolder"
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="d-block w-100"
+                  src={project.imgLink}
+                  alt="Project"
+                />
+              </a>
               <p>{project.description}</p>
               <p className="fw-bolder">
                 {project.technologies}

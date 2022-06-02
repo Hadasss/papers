@@ -110,8 +110,7 @@ section {
 }
 
 .accordion {
-  width: 65vw;
-  margin: auto;
+  margin: 0 20px;
 }
 
 .accordion-header .accordion-button {
@@ -156,7 +155,7 @@ section {
 
 .cv {
   padding: var(--section-padding);
-  background-color: #fce181;
+  background-color: #edeae5;
 }
 
 .contact {
