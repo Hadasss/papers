@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/papers/static/css/main.428d23db.css",
-    "main.js": "/papers/static/js/main.562bb6cf.js",
+    "main.css": "/papers/static/css/main.b8700b2e.css",
+    "main.js": "/papers/static/js/main.0b0dea5b.js",
     "static/js/787.984565ea.chunk.js": "/papers/static/js/787.984565ea.chunk.js",
     "static/media/hadas.jpg": "/papers/static/media/hadas.237fbbc65244df412bf0.jpg",
     "static/media/arizona1_11.jpg": "/papers/static/media/arizona1_11.1d6bfb48c2adb812b7c3.jpg",
@@ -9,6 +9,7 @@
     "static/media/project5.JPG": "/papers/static/media/project5.2fe4f12d4927cae676e0.JPG",
     "static/media/CV.pdf": "/papers/static/media/CV.6738560be25401e39ffc.pdf",
     "static/media/project10.jpg": "/papers/static/media/project10.851cb46c54d6c96152bf.jpg",
+    "static/media/letters.jpg": "/papers/static/media/letters.217027e0f62e92156e4e.jpg",
     "static/media/project3.JPG": "/papers/static/media/project3.8977b8cd14d602d0eff3.JPG",
     "static/media/project7.JPG": "/papers/static/media/project7.862904169238c886982a.JPG",
     "static/media/project6.JPG": "/papers/static/media/project6.a8da50deff247fe07d74.JPG",
@@ -16,13 +17,24 @@
     "static/media/project9.jpg": "/papers/static/media/project9.db4ed6ef80e4d6af5ee7.jpg",
     "static/media/project2.JPG": "/papers/static/media/project2.61dc22702ca8155e6e5b.JPG",
     "static/media/project11.jpg": "/papers/static/media/project11.dd8e1471bbf8c9cdc1c6.jpg",
+    "static/media/jquery.svg": "/papers/static/media/jquery.25d9404eb8cd534481d1960546256668.svg",
+    "static/media/mysql.svg": "/papers/static/media/mysql.c9286640a470004f40f86d07817e890e.svg",
+    "static/media/nodejs.svg": "/papers/static/media/nodejs.cccdafa931eebdaea49f5c5ac3ba232f.svg",
     "index.html": "/papers/index.html",
-    "main.428d23db.css.map": "/papers/static/css/main.428d23db.css.map",
-    "main.562bb6cf.js.map": "/papers/static/js/main.562bb6cf.js.map",
+    "static/media/react.svg": "/papers/static/media/react.a060cbe85e50deda1d61452cee9de5b2.svg",
+    "static/media/github.svg": "/papers/static/media/github.bad10a73efd6966a1eef1c3334505c97.svg",
+    "static/media/mongodb.svg": "/papers/static/media/mongodb.3beac5ba18197ccbdea6e2f53e18edcf.svg",
+    "static/media/javascript.svg": "/papers/static/media/javascript.081325c6f229605dce15142ddd948d6d.svg",
+    "static/media/git.svg": "/papers/static/media/git.43d387b77657117c0e407816cbf72476.svg",
+    "static/media/bootstrap.svg": "/papers/static/media/bootstrap.91aad92a015faa64813b5f46723153a8.svg",
+    "static/media/css.svg": "/papers/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
+    "static/media/html.svg": "/papers/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
+    "main.b8700b2e.css.map": "/papers/static/css/main.b8700b2e.css.map",
+    "main.0b0dea5b.js.map": "/papers/static/js/main.0b0dea5b.js.map",
     "787.984565ea.chunk.js.map": "/papers/static/js/787.984565ea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.428d23db.css",
-    "static/js/main.562bb6cf.js"
+    "static/css/main.b8700b2e.css",
+    "static/js/main.0b0dea5b.js"
   ]
 }
