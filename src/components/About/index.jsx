@@ -17,7 +17,7 @@ function About() {
           For the past 2.5 years I've been living the good life in Arizona with
           my family and loving every minute of it! <br />
           These days I'm especially enjoying exploring server side APIs, writing
-          controllers, routing and debugging. Who knew?
+          controllers, routing and debugging!
         </p>
       </article>
     </section>
