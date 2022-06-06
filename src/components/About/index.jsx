@@ -8,8 +8,8 @@ function About() {
       <article className="about-me d-flex flex-row flex-wrap">
         <img src={hadas} alt="Hadas Kamin" />
         <p>
-          I am an aspiring fullstack developer, <br />
-          currently a UofA boot camp student, graduating end of May.
+          I am an aspiring fullstack developer, a recent boot camp graduate from
+          the University of Arizona.
           <br />
           I am on a career changing path from being a marketing and advertising
           specialist for over 15 years and enjoying my newfound passion.
