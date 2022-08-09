@@ -12,7 +12,7 @@ function Footer() {
         <h2>Let's Connect!</h2>
       </div>
       <div className="social">
-        <a href="tel:480-123-1234">
+        <a href="tel:480-572-4421">
           <img src={phone} alt="telephone" />
         </a>
         <a
