@@ -54,10 +54,10 @@ function Project() {
       name: "Marvel Mayhem",
       description:
         "Find your favorite Marvel superhero in featured appearances.",
-      technologies: "Javascript, Tailwind, CSS, Bulma, Server side APIs",
+      technologies: "Javascript, Tailwind, CSS, RESTful APIs, localStorage",
       imgLink: marvel,
-      githubLink: "https://github.com/Hadasss/marvel-mayhem",
-      link: "https://hadasss.github.io/marvel-mayhem/",
+      githubLink: "https://github.com/Hadasss/marvel-mayhem-solo",
+      link: "https://hadasss.github.io/marvel-mayhem-solo/",
     },
     {
       name: "Happy Trails",
